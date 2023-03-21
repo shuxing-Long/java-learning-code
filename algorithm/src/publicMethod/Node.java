@@ -1,0 +1,51 @@
+package publicMethod;
+
+//自定义二叉树结构
+public class Node {
+	public int value;        //节点的值
+	public Node node;        //此节点，数据类型为Node
+	public Node left;        //此节点的左子节点，数据类型为Node
+	public Node right;       //此节点的右子节点，数据类型为Node
+	
+	public int getValue() {
+		return value;
+	}
+
+	public void setValue(int value) {
+		this.value = value;
+	}
+
+	public Node getNode() {
+		return node;
+	}
+
+	public void setNode(Node node) {
+		this.node = node;
+	}
+
+	public Node getLeft() {
+		return left;
+	}
+
+	public void setLeft(Node left) {
+		this.left = left;
+	}
+
+	public Node getRight() {
+		return right;
+	}
+
+	public void setRight(Node right) {
+		this.right = right;
+	}
+
+	public Node(int value) {
+		this.value=value;
+		this.left=null;
+		this.right=null;
+	}
+	public String toString() {         //自定义的toString方法，为了方便之后的输出
+		return this.value+" ";
+	}
+}
+
